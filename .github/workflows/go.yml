@@ -33,7 +33,8 @@ jobs:
       with:
         context: .
         platforms: linux/amd64
-#       labels: ${{ steps.meta.outputs.labels }}
+        file: docker/Dockerfile.linux.amd64
+        labels: ${{ steps.meta.outputs.labels }}
 
 
 
